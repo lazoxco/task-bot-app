@@ -1,2 +1,6 @@
 <h2>Name: <%= @robot.name %></h2>
 <h4>Slogan: <%= @robot.slogan %></h4>
+
+<%= button_to "All Robots", robots_path, method: :get %>
+<%= button_to "Edit Robot", edit_robot_path(@robot), method: :get %>
+<%= button_to "Remove Robot", robot_path(@robot), method: :delete %>
